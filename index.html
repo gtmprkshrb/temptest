@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>Reap Benefit</title>
+		<link href="css/style.css" rel="stylesheet"/>
+	</head>
+	<body class="main">
+		<section>
+			<script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+			<div  class="gmap-wrapper">
+				<div id='gmap_canvas' class="gmap_inner"></div>
+				<div class="search-box-container">
+					<div class="header-container">
+						<div class="logo-nav">
+							<div class="logo">
+								<img src="asset/images/reap-benefit-logo.png" alt="reap benefit"/>
+							</div>
+							<div class="nav" id="hamburger-menu">
+								<span class="menu-line"></span>
+							</div>
+						</div>
+						<div class="nav-links" id="nav-links">
+							<ul class="no-padding no-margin">
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Faq</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Investors</a></li>
+								<li><a href="#">Legal</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="search-box-container-header">
+						<form action="#" method="post">
+							<div class="search-term">
+								<input type="text" id="search-box" class="search-box" placeholder="Enter Your Location/Query" name="search-name"/>
+								<input type="submit" class="search-icon" value="search"/>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="category-container home-category-container" id="category-container">
+					<div class="main-category-wrapper">
+						<div class="category-icons">
+							<div class="category-icon">
+								<div class="c-icon bgcolor-1">
+									<div class="c-icon-img">
+										<a href="#"><img src="asset/icons/waste.png" alt="dustbin icon"/></a>
+									</div>
+									<p class="c-icon-title">Waste</p>
+								</div>
+								<div class="c-icon bgcolor-2">
+									<div class="c-icon-img">
+										<a href="#"><img src="asset/icons/water.png" alt="water icon"/></a>
+									</div>
+									<p class="c-icon-title">Water</p>
+								</div>
+								<div class="c-icon bgcolor-3">
+									<div class="c-icon-img">
+										<a href="#"><img src="asset/icons/pothole.png" alt="pothole icon"/></a>
+									</div>
+									<p class="c-icon-title">Pothole</p>
+								</div>
+								<div class="c-icon bgcolor-4">
+									<div class="c-icon-img">
+										<a href="#"><img src="asset/icons/air.png" alt="air icon"/></a>
+									</div>
+									<p class="c-icon-title">Air</p>
+								</div>
+								<div class="c-icon bgcolor-5">
+									<div class="c-icon-img">
+										<a href="#"><img src="asset/icons/sanitation.png" alt="sanitation icon"/></a>
+									</div>
+									<p class="c-icon-title">Sanitation</p>
+								</div>
+								<div class="c-icon bgcolor-6">
+									<div class="c-icon-img">
+										<a href="#"><img src="asset/icons/education.png" alt="education icon"/></a>
+									</div>
+									<p class="c-icon-title">Education</p>
+								</div>
+								<div class="c-icon bgcolor-7">
+									<div class="c-icon-img">
+										<a href="#"><img src="asset/icons/civic.png" alt="civic icon"/></a>
+									</div>
+									<p class="c-icon-title">Civic</p>
+								</div>
+								<div class="c-icon bgcolor-8">
+									<div class="c-icon-img">
+										<a href="#"><img src="asset/icons/governance.png" alt="governance icon"/></a>
+									</div>
+									<p class="c-icon-title">Governance</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script type='text/javascript'>function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(12.9715987,77.59456269999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(12.9715987,77.59456269999998)});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+</html>
